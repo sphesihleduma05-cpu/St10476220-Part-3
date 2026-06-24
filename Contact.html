@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Lwandle Protection Services</title> 
+ 
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar"> <a href="#" class="logo">Lwandle Protection Services</a>
+            <div class="hamburger" id="hamburger"> <span></span> <span></span> <span></span> </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li> <a href="Services.html" class="submenu-toggle">Services ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">Armed Response</a></li>
+                        <li><a href="#">Event Security</a></li>
+                        <li><a href="#">VIP Protection</a></li>
+                        <li><a href="#">Alarm System Installation and Monitoring</a></li>
+                        <li><a href="#">Patrol Services</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#" class="submenu-toggle">Gallery ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">Armed Response Units</a></li>
+                        <li><a href="#">CCTV and Control Room Monitoring</a></li>
+                        <li><a href="#">Vehicles and Branding</a></li>
+                        <li><a href="#">Patrol Service</a></li>
+                        <li><a href="#">Security Personnel in Action</a></li>
+                    </ul>
+                </li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <center>
+        <h3>Contact Us</h3>
+    </center>
+    <div class="container">
+        <form action="/action_page.php"> <label for="fname">First Name</label> <input type="text" id="fname"
+                name="firstname" placeholder="Your name.."> <label for="lname">Last Name</label> <input type="text"
+                
+                id="lname" name="lastname" placeholder="Your last name.."> <label for="ename">Email Name</label> <input
+                type="text" id="ename" name="emailname" placeholder="Your Email Name.."> <label
+                
+                for="subject">Subject</label> <textarea id="subject" name="subject" placeholder="Write something.."
+                style="height:200px"></textarea>
+            
+                <center><input type="submit" id="submit" value="Submit"></center>
+        
+            </form>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <h2>Lwandle Protection Services</h2>
+            <p>Ukuphepha Kwakho Kuza Kuqala. Your Safety Comes First</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Armed Response</a></li>
+                <li><a href="#">Event Security</a></li>
+                <li><a href="#">VIP Protection</a></li>
+                <li><a href="#">Alarm System Installation and Monitoring</a></li>
+                <li><a href="#">Patrol Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>121 Bhejane Road, Durban, KwaMashu</p>
+            <p>0839289828</p>
+            <p>info@lwandleprotectionservices.com</p>
+            <div class="footer-social"> <a href="#">🌐</a> <a href="#">📘</a> <a href="#">🐦</a> <a href="#">📸</a>
+            </div>
+        </div>
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe for special offers and updates</p>
+            <form> <input type="email" placeholder="Enter your email" required> <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    <script>
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+
+    submenuToggles.forEach(toggle => {
+
+      toggle.addEventListener('click', (e) => {
+
+        if (window.innerWidth <= 768) {
+
+          e.preventDefault();
+
+          const submenu = toggle.nextElementSibling;
+
+          submenu.classList.toggle('open');
+        }
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+</body>
+
+</html>
